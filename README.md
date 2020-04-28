@@ -1,6 +1,4 @@
 # python-projects
 a repository to upload my python programming projects to
 
-list of projects:
-  -house inventory
-  -menu maker
+if you have any problems or want to recommend me nay projects then please open an issue
