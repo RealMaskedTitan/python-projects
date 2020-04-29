@@ -1,91 +1,81 @@
 import random
 
-def verify_p1():
-    while True:
-        p1 = str(input("Please enter player one username: "))
-        if p1 == 'Mustaeen':
-            p1_psswd = str(input('Please enter player one password: '))
-            if p1_psswd == '1234':
-                print('Authentication successful, enjoy your session!')
-                p1_score = 0
-                break
-            else:
-                print('Authentication failed!')
-        else:
-            print('Authentication failed!')
+while True:
+	p1_usrname = input("Player One username : ")
+	if p1_usrname == "MaskedTitan":
+		p1_password = input("Player One password : ")
+		if p1_password == "1234":
+			print("Authentication successful!")
+			break
+		else:
+			print("Authentication Error!\nTry Again!")
+	else:
+		print("Authentication Error!\nTry Again!")
 
-def verify_p2():
-    while True:
-        p2 = str(input("Please enter player two username: "))
-        if p2 == 'Mai Sakurijima':
-            p2_psswd = str(input('Please enter player two password: '))
-            if p2_psswd == '1234':
-                print('Authentication successful, enjoy your session!')
-                p2_score = 0
-                break
-            else:
-                print('Authentication failed!')
-        else:
-            print('Authentication failed!')
+while True:
+	p2_usrname = input("Player Two username : ")
+	if p2_usrname == "Mai Sakurijima":
+		p2_password = input("Player Two password : ")
+		if p2_password == "1234":
+			print("Authentication successful!")
+			break
+		else:
+			print("Authentication Error!\nTry Again!")
+	else:
+		print("Authentication Error!\nTry Again!")
 
-times_executed = 0
+def rounds():
+	print("Round : " + str(Round))
+	input("Player Two press enter to roll!")
+	roll_one = random.randint(1, 6)
+	print("Dice One : " + str(roll_one))
+	roll_two = random.randint(1, 6)
+	print("Dice Two : " + str(roll_two))
+	total = roll_one + roll_two
+	print("Total points this roll : " + str(total))
+	if (total/2) is int:
+		total = total +10
+		print("You have gotten an even total!\nYou have gained 10 points")
+	elif roll_one == roll_two:
+		print("You have rolled a double!")
+		roll_three = random.randint(1, 6)
+		print("Third Dice : " + str(roll_three))
+		total = total + roll_three
+		print("Your new total is : ")
+	else:
+		total = total - 5
+		print("You have gotten an odd total\nYou have lost 5 points!\nYour new total : " + str(total))
+	return total
 
-def game():
-    print('starting player one game!')
-    input('Press enter to begin!')
-    p1_score = 0
-    while times_executed >= 5:
-        times_executed = times_executed + 1
-        roll1 = random.randint(0, 6)
-        print("You have rolled: ", roll1)
-        roll2 = random.randint(0, 6)
-        print("You have rolled: ", roll1)
-        p1_score = roll1 + roll2 + p1_score
-        if ((roll1 + roll2) % 2) == 0:
-            print("You have rolled an even number, you will be awarded with 10 points!")
-            p1_score  = p1_score + 10
-        else:
-            print("You have rolled an odd number, you will have 5 points deducted!")
-            if p1_score > 5:
-                p1_score  = p1_score - 5
-            else:
-                p1_score = 0
 
-    print('starting player two game!')
-    times_executed = 0
-    input('Press enter to begin!')
-    p2_score = 0
-    while times_executed >= 5:
-        roll1 = random.randint(0, 6)
-        print("You have rolled: ", roll1)
-        roll2 = random.randint(0, 6)
-        print("You have rolled: ", roll1)
-        p2_score = p2_score + roll1 + roll2
-        if ((roll1 + roll2) % 2) == 0:
-            print("You have rolled an even number, you will be awarded with 10 points!")
-            p2_score  = p2_score + 10
-        else:
-            print("You have rolled an odd number, you will have 5 points deducted!")
-            if p2_score > 5:
-                p2_score  = p2_score - 5
-            else:
-                p2_score = 0
 
-    if p1_score > p2_score:
-        print("Player one  has won!")
-    if p1_score < p2_score:
-        print("Player two has won!")
-    else:
-        print("There has been a draw!")
-        input("Player one press enter to roll!")
-        p1_roll = random.randint(1, 6)
-        p1_score = p1_score + p1_roll
-        print("Player one your final score is: ", p1_score)
-        input("Player two press enter to roll!")
-        p2_roll = random.randint(1, 6)
-        p2_score = p1_score + p2_roll
-        print("Player two your final score is: ", p2_score)
+round_no = 0
+player_One_Score = 0
+while Round =< 5:
+	if player_One_Score + rounds() <0:
+		print("Your score is 0 and will not go down")
+	else:
+		player_One_Score = player_One_Score + rounds()
+print("Player One your Score is : " + str(player_One_Score))
 
-verify_p1()
-verify_p2()
-game()
+round_no = 0
+player_Two_Score = 0
+while Round =< 5:
+	if player_Two_Score + rounds() <0:
+		print("Your score is 0 and will not go down")
+	else:
+		player_Two_Score = player_One_Score + rounds()
+print("Player Two your Score is : " + str(player_Two_Score))
+
+def verdict(player_One_Score, player_Two_Score):
+	if player_One_Score > player_Two_Score:
+		print("Player One Won!")
+		print("<Winner!> Player One score : " + str(player_One_Score))
+		print("<Loser> player Two score : " + str(player_Two_score))
+	elif player_One_Score < player_Two_Score:
+		print("Player Two Won!")
+		print("<Loser> Player One score : " + str(player_One_Score))
+		print("<Winner!> player Two score : " + str(player_Two_score))
+	else:
+		print("There has been a tie!")
+
