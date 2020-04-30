@@ -43,3 +43,8 @@ Displays the number of points the player has when the game ends.
 Stores the name of the player and their score in an external file.
 Displays the score and player name of the top 5 winning scores from the external file.
 </div>
+
+<h4>Menu Maker</h4>
+<div>
+    a python module to output menus
+</div>
