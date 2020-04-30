@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>MaskedTitan's Python projects!</title>
+<h1>MaskedTitan's Python projects!</h1>
 
 <div class="w3-top">
   <div class="w3-bar w3-red w3-card w3-left-align w3-large">
