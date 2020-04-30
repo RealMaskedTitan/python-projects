@@ -78,4 +78,6 @@ def verdict(player_One_Score, player_Two_Score):
 		print("<Winner!> player Two score : " + str(player_Two_score))
 	else:
 		print("There has been a tie!")
-
+		player_1_roll = random.randint(1, 6)
+		player_2_roll = random.randint(1, 6)
+		verdict(player_1_roll, player_2_roll)
