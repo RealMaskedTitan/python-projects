@@ -4,4 +4,5 @@
 
 <div class="top">
     <a href="https://github.com/RealMaskedTitan/python-projects/tree/master">Home</a>
+    <a href="">Music Trivia</a>
   </div>
