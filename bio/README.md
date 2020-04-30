@@ -3,7 +3,7 @@
     
    <div class="w3-white w3-text-grey w3-card-4">
         <div>
-          <img src="/w3images/avatar_hat.jpg" style="width:100%" alt="Avatar">
+          <img src="https://github.com/RealMaskedTitan/python-projects/blob/master/bio/64439876.jpeg" style="width:100%" alt="Avatar">
           <div>
             <h2>Masked Titan(仮面タイタン)</h2>
           </div>
