@@ -3,5 +3,5 @@
 <h1>MaskedTitan's Python projects!</h1>
 
 <div class="top">
-    <a href="">Home</a>
+    <a href="https://github.com/RealMaskedTitan/python-projects/tree/master">Home</a>
   </div>
