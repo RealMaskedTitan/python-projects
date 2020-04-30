@@ -45,7 +45,7 @@ Displays the score and player name of the top 5 winning scores from the external
 </div>
 
 <h2>Menu Maker</h2>
-<div>
+
     a python module to output menus
     example of this output is:
     ------------
@@ -56,4 +56,4 @@ Displays the score and player name of the top 5 winning scores from the external
     ------------
     this can be achieved by running this command:
     make_menu(['thanks', 'for', 'using', 'this'])
-</div>
+
