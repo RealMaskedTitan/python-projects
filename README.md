@@ -18,7 +18,8 @@
     This python program is made to keep track of items with features such as: the date of the item being registered into the                                database any notes for the items are saved the location of the item is recorded
     This program uses the python datetime module to record the date it also uses the json module to interact with the json database file
 </div>
-<h3></h3>
+<br>
+<h3>Music Trivia</h3>
 <div>
     music trivia This python program is designed to test a person's knowledge about music names.
 
