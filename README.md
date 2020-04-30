@@ -46,13 +46,13 @@ Displays the score and player name of the top 5 winning scores from the external
 
 <h2>Menu Maker</h2>
 
-   a python module to output menus
-   example of this output is:
-   ------------
-   | thanks   |
-   | for      |
-   | using    |
-   | this     |
-   ------------
-   this can be achieved by running this command:
-   make_menu(['thanks', 'for', 'using', 'this'])
+    a python module to output menus
+    example of this output is:
+    ------------
+    | thanks   |
+    | for      |
+    | using    |
+    | this     |
+    ------------
+    this can be achieved by running this command:
+    make_menu(['thanks', 'for', 'using', 'this'])
