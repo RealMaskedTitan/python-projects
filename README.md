@@ -11,3 +11,4 @@
       <div>
 
 <h1>MaskedTitan's Python projects!</h1>
+<p1>Welcome to my Github repo about my python projects, where as you can tell I store my python projects</p1>
