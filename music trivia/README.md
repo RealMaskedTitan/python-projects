@@ -1,4 +1,4 @@
-#music trivia
+music trivia
 This python program is designed to test a person's knowledge
 about music names.
 
