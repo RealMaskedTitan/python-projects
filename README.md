@@ -19,7 +19,7 @@
     This program uses the python datetime module to record the date it also uses the json module to interact with the json database file
 </div>
 <br>
-<h3>Music Trivia</h3>
+<h2>Music Trivia</h2>
 <div>
     music trivia This python program is designed to test a person's knowledge about music names.
 
@@ -44,7 +44,7 @@ Stores the name of the player and their score in an external file.
 Displays the score and player name of the top 5 winning scores from the external file.
 </div>
 
-<h4>Menu Maker</h4>
+<h2>Menu Maker</h2>
 <div>
     a python module to output menus
 </div>
